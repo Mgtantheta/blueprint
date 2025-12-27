@@ -1,4 +1,4 @@
-package com.example.recodecheck.ui.theme
+package com.example.recodecheck.core.designsystem.theme
 
 import androidx.compose.ui.graphics.Color
 
