@@ -36,3 +36,9 @@ detekt {
         ),
     )
 }
+
+subprojects {
+    tasks.withType<Test>().configureEach {
+        maxParallelForks = Runtime.getRuntime().availableProcessors()
+    }
+}
