@@ -1,0 +1,30 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:recommended",
+    ":dependencyDashboard"
+  ],
+  "schedule": ["before 3am on Monday"],
+  "timezone": "Asia/Tokyo",
+  "labels": ["dependencies"],
+  "packageRules": [
+    {
+      "groupName": "Kotlin",
+      "matchPackagePatterns": ["org.jetbrains.kotlin.*"]
+    },
+    {
+      "groupName": "Compose",
+      "matchPackagePatterns": ["^androidx\\.compose\\..*"]
+    },
+    {
+      "groupName": "AndroidX",
+      "matchPackagePrefixes": ["androidx"],
+      "excludePackagePatterns": ["^androidx\\.compose\\..*"]
+    },
+    {
+      "description": "Auto-merge patch updates",
+      "matchUpdateTypes": ["patch"],
+      "automerge": true
+    }
+  ]
+}

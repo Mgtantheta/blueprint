@@ -1,24 +1,28 @@
 # TODO
 
-## 現在のブランチ (feature/rename-to-blueprint)
+## 完了済み
+
+### リネーム (feature/rename-to-blueprint)
 - [x] settings.gradle.kts rootProject.name 変更
 - [x] namespace/applicationId 変更 (com.mgtantheta.blueprint)
 - [x] Convention Plugin ID変更 (blueprint.*)
-- [ ] パッケージディレクトリリネーム
-- [ ] Theme名変更 (BlueprintTheme)
-- [ ] ドキュメント更新
-- [ ] GitHubリポジトリ名変更
+- [x] パッケージディレクトリリネーム
+- [x] Theme名変更 (BlueprintTheme)
+- [x] ドキュメント更新
+- [x] GitHubリポジトリ名変更
 
-## 次のタスク (ブランチ分けて実施)
+### インフラ
+- [x] Detekt 導入
+- [x] Spotless 導入
+
+## 次のタスク
 
 ### インフラ
 - [ ] CI/CD (GitHub Actions)
-  - [ ] Build workflow (PR時)
-  - [ ] Lint workflow (Detekt + Spotless)
+  - [x] Build workflow (PR時)
+  - [x] Lint workflow (Detekt + Spotless)
   - [ ] Release workflow (tag push時)
-  - [ ] Renovate導入
-- [ ] Detekt 導入
-- [ ] Spotless 導入
+  - [x] Renovate導入 (※GitHub Appインストール要: https://github.com/apps/renovate)
 
 ### Core モジュール
 - [ ] core:common (ユーティリティ)
