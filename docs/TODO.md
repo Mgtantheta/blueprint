@@ -34,21 +34,21 @@
 - [ ] core:ui (再利用可能Component)
 
 ### ライブラリ導入
-- [ ] Hilt (DI)
-- [ ] Navigation 3
+- [x] Hilt (DI)
+- [x] Navigation 3
 - [ ] Ktor Client
-- [ ] Kotlinx Serialization
-- [ ] Coil
-- [ ] Lottie Compose
+- [x] Kotlinx Serialization
+- [x] Coil 3
+- [x] Lottie Compose
 
 ### Feature モジュール
 - [ ] feature:home
 - [ ] feature:settings
 
 ## Convention Plugins 追加予定
-- [ ] blueprint.android.hilt
-- [ ] blueprint.android.feature
-- [ ] blueprint.kotlin.library
+- [x] blueprint.android.hilt
+- [x] blueprint.android.feature
+- [x] blueprint.kotlin.library
 
 ## 参考
 - [Now in Android](https://github.com/android/nowinandroid)

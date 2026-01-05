@@ -1,5 +1,6 @@
 plugins {
     id("blueprint.android.application.compose")
+    alias(libs.plugins.android.application) apply false
 }
 
 android {
@@ -27,4 +28,7 @@ android {
 dependencies {
     implementation(project(":core:designsystem"))
     implementation(project(":feature:home"))
+    implementation(libs.findLibrary("coil-compose").get())
+    implementation(libs.findLibrary("coil-network-ktor3").get())
+    implementation(libs.findLibrary("ktor-client-okhttp").get())
 }

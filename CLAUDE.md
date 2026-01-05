@@ -120,6 +120,19 @@ com.mgtantheta.blueprint.core.<core_module>
 - Repository: `withContext(Dispatchers.IO)`
 - UseCase: suspend fun
 
+### Dependencies (Version Catalog)
+ライブラリエイリアスにハイフンが含まれる場合、`libs.findLibrary()` を使用する:
+
+```kotlin
+// OK: findLibrary() を使用
+implementation(libs.findLibrary("coil-compose").get())
+implementation(libs.findLibrary("coil-network-ktor3").get())
+implementation(libs.findLibrary("ktor-client-okhttp").get())
+
+// NG: ドット記法は使えない (エイリアスにハイフンがある場合)
+// implementation(libs.coil.compose)  // エラーになる
+```
+
 ## Key Files
 
 | ファイル | 説明 |
