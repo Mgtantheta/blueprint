@@ -53,5 +53,9 @@ gradlePlugin {
             id = "blueprint.android.feature"
             implementationClass = "AndroidFeatureConventionPlugin"
         }
+        register("kotlinLibrary") {
+            id = "blueprint.kotlin.library"
+            implementationClass = "KotlinLibraryConventionPlugin"
+        }
     }
 }
