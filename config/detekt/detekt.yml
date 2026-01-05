@@ -39,6 +39,8 @@ coroutines:
 naming:
   FunctionNaming:
     ignoreAnnotated: ['Composable', 'Test', 'ParameterizedTest']
+  MatchingDeclarationName:
+    active: false
   TopLevelPropertyNaming:
     constantPattern: '[A-Z][_A-Za-z0-9]*'
   InvalidPackageDeclaration:
@@ -100,6 +102,7 @@ style:
     active: true
   UnusedPrivateMember:
     allowedNames: '(_|ignored|expected|serialVersionUID)'
+    ignoreAnnotated: ['Preview']
   UseCheckOrError:
     active: true
   UseRequire:
