@@ -9,6 +9,7 @@ nav3 = "1.0.0"
 lifecycleViewmodelNav3 = "2.10.0"
 kotlinxSerializationJson = "1.9.0"
 coil = "3.3.0"
+ktor = "3.3.3"
 lottie = "6.7.1"
 coreKtx = "1.17.0"
 junit = "4.13.2"
@@ -55,7 +56,10 @@ androidx-compose-material3 = { group = "androidx.compose.material3", name = "mat
 
 # Image Loading
 coil-compose = { group = "io.coil-kt.coil3", name = "coil-compose", version.ref = "coil" }
-coil-network-okhttp = { group = "io.coil-kt.coil3", name = "coil-network-okhttp", version.ref = "coil" }
+coil-network-ktor3 = { group = "io.coil-kt.coil3", name = "coil-network-ktor3", version.ref = "coil" }
+
+# Ktor
+ktor-client-okhttp = { group = "io.ktor", name = "ktor-client-okhttp", version.ref = "ktor" }
 
 # Animation
 lottie-compose = { group = "com.airbnb.android", name = "lottie-compose", version.ref = "lottie" }

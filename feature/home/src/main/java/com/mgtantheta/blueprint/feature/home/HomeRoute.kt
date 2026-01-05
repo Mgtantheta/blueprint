@@ -7,4 +7,7 @@ import kotlinx.serialization.Serializable
 @Serializable
 data object HomeRoute : NavKey
 
-fun EntryProviderScope<NavKey>.homeScreen() = entry<HomeRoute> { HomeScreen() }
+fun EntryProviderScope<NavKey>.homeScreen() =
+    entry<HomeRoute> {
+        HomeScreen(uiState = HomeUiState())
+    }
