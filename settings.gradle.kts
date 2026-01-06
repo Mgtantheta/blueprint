@@ -28,5 +28,8 @@ dependencyResolutionManagement {
 rootProject.name = "blueprint"
 
 include(":app")
+include(":core:data")
 include(":core:designsystem")
+include(":core:model")
+include(":core:network")
 include(":feature:home")
