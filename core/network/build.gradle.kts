@@ -9,6 +9,8 @@ android {
 }
 
 dependencies {
+    api(project(":core:model"))
+
     implementation(libs.findLibrary("ktor-client-core").get())
     implementation(libs.findLibrary("ktor-client-okhttp").get())
     implementation(libs.findLibrary("ktor-client-content-negotiation").get())
